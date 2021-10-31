@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
 	<!-- Basic -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -81,36 +80,11 @@
 		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 	</style>
 	<div class="body">
-		<header id="header" class="header-effect-shrink"
-			data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 85}">
+		<header id="header" style="position: fixed; width: 100vw;" class="header-effect-shrink">
 			<div class="header-body header-body-bottom-border border-top-0">
-				<div class="header-top header-top-bottom-containered-border pt-2">
-					<div class="container">
-						<div class="header-row">
-							<div class="header-column justify-content-start">
-								<div class="header-row">
 
-									<ul class="nav nav-pills position-relative bottom-1 ms-md-3">
-										<li class="nav-item">
-											<span
-												class="d-flex align-items-center ws-nowrap text-color-secondary font-weight-medium text-3"><i
-													class="icon-clock icons text-3 top-3 left-1 me-2 text-color-secondary font-weight-bold"></i>
-												Lundi – Samedi 08H à 20H</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="header-column justify-content-end">
-								<div class="header-row">
-									<a href="demo-cleaning-services-contact.html"
-										class="custom-header-top-btn-style-1 btn btn-secondary font-weight-bold px-4 px-sm-5 py-3">JE
-										SIMULE</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="header-container container">
+
+				<div class="header-container container" style="padding-right: 0px;  height: 80px; min-height: 80px;">
 					<div class="header-row">
 						<div class="header-column">
 							<div class="header-row">
@@ -123,6 +97,7 @@
 							</div>
 						</div>
 						<div class="header-column justify-content-end">
+
 							<div class="header-row">
 								<div class="header-nav header-nav-links">
 									<div
@@ -141,34 +116,137 @@
 									</div>
 								</div>
 								<div class="feature-box feature-box-style-2 align-items-center ms-lg-4">
-									<div class="feature-box-icon d-none d-sm-inline-flex">
-										<img class="icon-animated" width="48"
-											src="img/demos/cleaning-services/icons/phone.svg" alt="" data-icon
-											data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary position-relative bottom-3'}" />
-									</div>
+
+
 									<div class="feature-box-info ps-2">
-										<p class="font-weight-semibold line-height-1 text-2 pb-0 mb-1">APPELEZ-NOUS</p>
-										<a href="tel:+1234567890"
-											class="text-color-tertiary text-color-hover-primary text-decoration-none font-weight-bold line-height-1 custom-font-size-1 pb-0">01
-											84 80 60 22</a>
+										<a href="demo-cleaning-services-contact.html"
+											class="custom-header-top-btn-style-1 btn btn-secondary font-weight-bold px-4 px-sm-5 py-3">JE
+											SIMULE</a>
 									</div>
+
 								</div>
 								<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
 									data-bs-target=".header-nav-main nav">
-									<i class="fas fa-bars"></i>
+
+
+
 								</button>
 							</div>
 						</div>
 					</div>
 				</div>
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<div class="row ctx">
+				<div class="col"
+					style="display: grid; place-items: center; background: linear-gradient(to right top, blue, red) !important;">
+					<img class="ctx-img" width="40" src="img/demos/cleaning-services/icons/phone.svg"
+						style="color : white !important ;" />
+				</div>
+				<div class="col ps-2 ctx-2">
+					<p class="font-weight-semibold line-height-1 text-2 pb-0 mb-1">APPELEZ-NOUS</p>
+					<a href="tel:+1234567890"
+						class="text-color-tertiary text-color-hover-primary text-decoration-none font-weight-bold line-height-1 custom-font-size-1 pb-0"
+						style="font-size: 15px !important;">01
+						84 80 60 22</a>
+					<span class="d-flex align-items-center ws-nowrap text-color-secondary font-weight-medium text-3"><i
+							class="icon-clock icons text-3 top-3 left-1 me-2 text-color-secondary font-weight-bold"
+							style="font-size: 15px !important;"></i>
+						Lundi – Samedi 08H à 20H</span>
+				</div>
 			</div>
 		</header>
+
+
+
+
+		<style>
+			*::-webkit-scrollbar {
+				width: 10px;
+			}
+
+			*::-webkit-scrollbar-thumb {
+				width: 10px;
+				background: linear-gradient(to right top, blue, red);
+			}
+
+			.ctx {
+				background: white;
+				position: fixed;
+				top: 300px;
+				right: -220px;
+				transition: all 1s ease;
+				padding: 5px;
+				cursor: pointer;
+				box-shadow: 2px 15px 75px rgba(238, 238, 238, 0.441);
+			}
+
+			.ctx:hover,
+			.ctx:focus {
+				right: 10px;
+			}
+
+			.ctx-2 {
+				width: 230px;
+			}
+
+			.ctx-img {
+				animation-name: rotate-phone;
+				animation-duration: 0.5s;
+				animation-iteration-count: infinite;
+			}
+
+			@keyframes rotate-phone {
+				0% {
+					transform: rotateZ(0deg);
+				}
+
+				50% {
+					transform: rotateZ(-30deg);
+
+				}
+
+				100% {
+					transform: rotateZ(0deg);
+
+				}
+			}
+		</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		<div role="main" class="main">
 
 			<section class="section section-with-shape-divider section-parallax bg-tertiary border-0 m-0"
 				data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '110%', 'fadeIn': true}"
-				data-image-src=".//img/prime/p2.jpg" style="background-color : red">
+				data-image-src=".//img/prime/topback.png" style="background-color : red">
 
 				<div class="shape-divider shape-divider-bottom" style="height: 576px; ">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -193,7 +271,8 @@
 								" />
 					</svg>
 				</div>
-				<div class="container position-relative z-index-1 pb-5 my-5">
+				<div class="container position-relative z-index-1 pb-5 "
+					style="padding-right: 0px !important; margin-right: 0px !important;">
 					<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1000">
 						<div class="custom-svg-stars clean-animation-1">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -223,8 +302,10 @@
 							</svg>
 						</div>
 					</div>
-					<div class="row justify-content-center justify-content-lg-start pb-5 mb-5" style="width: 100%;">
-						<div class="row text-center text-lg-end pe-lg-4 pb-5 mb-5">
+
+					<div class="row justify-content-center justify-content-lg-start pb-0 mb-0"
+						style="padding-right: 0px !important; margin-right: 0px !important;">
+						<div class="col text-center  pe-lg-3 pb-0 mb-10">
 							<h1 class="text-color-light font-weight-medium line-height-4 text-10 mb-2 appear-animation align-items-center"
 								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">Avec <span
 									class="font-weight-extra-bold custom-highlight-1 ws-nowrap p-1 customHighlightAnim customHighlightAnimDelay">LABONNEPRIME
@@ -236,199 +317,214 @@
 							</div>
 
 							<div class="spacer pt-5 my-5"></div>
+
+
+							<div class="col" style="display: grid; place-items: center;">
+								<div class="row"
+									style="background-color: white; padding: 8px; border-radius: 20px; margin: 0 auto ;">
+									<div class="row-6 row-xl-3 mb-2 mb-xl-0 appear-animation"
+										data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+										<div
+											class="d-flex align-items-center justify-content-center flex-column flex-xl-row text-center">
+											<svg fill="none" height="30" stroke="#212121" stroke-linecap="round"
+												stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="30"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M22 11.07V12a10 10 0 1 1-5.93-9.14" />
+												<polyline points="23 3 12 14 9 11" />
+											</svg>
+											<h3 class="text-transform-none  mb-0 text-4 ps-1 ms-xl-2  mt-xl-0">
+												<span style="color: #21fc66;">Simulez </span> : En quelques clics,
+												réalisez une
+												estimation gratuite de vos aides et bénéficiez
+												de notre accompagnement pour simplifier vos démarches.
+										</div>
+									</div>
+
+									<div class="row-6 row-xl-3 mb-5 mb-xl-0 appear-animation"
+										data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+										<div
+											class="d-flex align-items-center justify-content-center flex-column flex-xl-row text-center">
+											<svg fill="none" height="30" stroke="#212121" stroke-linecap="round"
+												stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="30"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M22 11.07V12a10 10 0 1 1-5.93-9.14" />
+												<polyline points="23 3 12 14 9 11" />
+											</svg>
+											<h3 class="text-transform-none mb-0 text-4 ps-1 ms-xl-2 mt-3 mt-xl-0">
+
+												<span style="color: #ef58c2 ;">
+													Rénovez </span> : Bénéficiez de notre réseau d’artisans locaux
+												qualifiés
+												pour
+												réaliser des
+												travaux de qualité.
+
+										</div>
+									</div>
+
+									<div class="row-6 row-xl-3 mb-5 mb-xl-0 appear-animation"
+										data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+										<div
+											class="d-flex align-items-center justify-content-center flex-column flex-xl-row text-center">
+											<svg fill="none" height="30" stroke="#212121" stroke-linecap="round"
+												stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="30"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M22 11.07V12a10 10 0 1 1-5.93-9.14" />
+												<polyline points="23 3 12 14 9 11" />
+											</svg>
+											<h3 class="text-transform-none mb-0 text-4 ps-1 ms-xl-2 mt-3 mt-xl-0">
+
+												<span style="color: #037ef3;"> Économisez </span> : Obtenez les
+												meilleures
+												primes,
+												faîtes des économies d’énergie et augmenter
+												la valeur de votre bien.</h3>
+
+
+										</div>
+									</div>
+									<div class="row align-items-center"
+										style="width: 100%; display: grid; place-items: center;">
+										<div class="col-auto ">
+											<button type="submit" class="btn btn-primary mb-2"
+												style="background: linear-gradient(to right top, blue, red); color:rgb(255, 255, 255) ; border: none; box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 5%), 0 1.5rem 2.2rem rgb(0 0 0 / 10%) !important;">Je
+												JE FAIS LE TEST</button>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
 						</div>
+
+						<div class="col pe-lg-1 mb-5 mb-lg-0 mt-3">
+							<div class="card border-0 custom-border-radius-1 box-shadow-1 appear-animation"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
+								<div class="card-body p-3">
+									<h2 class="text-color-secondary font-weight-bold text-4 1 mb-1"
+										style="text-align: center;">DEMANDE
+										DE
+										RAPPEL</h2>
+									<p class="custom-font-secondary text-2  mb-1">Besoin d’une assistance
+										personnalisée
+										? Prenez contact</p>
+									<p class="custom-font-secondary text-2  mb-1">avec notre équipe qui vous
+										rappellera
+										sous 24h.
+									</p>
+
+
+
+
+
+
+									<form class="contact-form custom-form-style-1"
+										action="https://sheetdb.io/api/v1/smvo8zxy3a2pc" method="POST">
+										<div class="contact-form-success alert alert-success d-none mt-4">
+											<strong> Succès!</strong> Votre demande nous a été envoyée.
+										</div>
+
+										<div class="contact-form-error alert alert-success d-none mt-4">
+											<strong> Succès!</strong> Votre demande nous a été envoyée.
+											<span class="mail-error-message text-1 d-block"></span>
+										</div>
+
+										<div class="row">
+											<div class="form-group col pb-1 mb-3">
+
+
+												<input type="text" value=""
+													data-msg-required="S'il vous plaît entrez votre nom."
+													maxlength="100" class="form-control" name="data[name]"
+													placeholder="Nom" required>
+
+
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col pb-1 mb-3">
+
+
+												<input type="email" value=""
+													data-msg-required="S'il vous plaît entrez votre adresse email."
+													maxlength="100" class="form-control" name="data[email]"
+													placeholder="Adresse Email" required>
+
+
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col pb-1 mb-3">
+
+												<input type="tel" value=""
+													data-msg-required="S'il vous plaît entrez votre Numéro de téléphone."
+													maxlength="100" class="form-control" name="data[phone]"
+													placeholder="Numéro de téléphone" required>
+
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col pb-1 mb-3">
+												<div class="custom-select-1">
+													<select data-msg-required="Veuillez sélectionner un projet."
+														class="form-control" name="data[project]" required>
+														<option value="Votre/Vos projet(s)" selected>Votre/Vos projet(s)
+														</option>
+														<option value="Isolation">Isolation </option>
+														<option value="Pompe à chaleur Air Eau">Pompe à chaleur Air Eau
+														</option>
+														<option value="Pompe à chaleur Air Air">Pompe à chaleur Air Air
+														</option>
+														<option value="Autre">Autre</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="d-flex row">
+
+											<div class=" form-group col pb-1 mb-3">
+												<input type="postal" value=""
+													data-msg-required="S'il vous plaît entrez votre Code postal."
+													maxlength="100" class="form-control" name="data[code]"
+													placeholder="Code postal" required>
+											</div>
+
+
+											<div class="form-group col pb-1 mb-3">
+												<input type="text" value=""
+													data-msg-required="S'il vous plaît entrez votre Ville ."
+													maxlength="100" class="form-control" name="data[city]"
+													placeholder="Ville" required>
+
+											</div>
+
+
+										</div>
+										<div class="row">
+											<div class="form-group col mx-auto"
+												style="display: grid; place-items: center;">
+												<button type="submit"
+													class="btn btn-primary font-weight-bold text-1 px-5 py-3 "
+													style="background: linear-gradient(to right top, blue, red) ; border:none"
+													data-loading-text="Loading...">JE DEMANDE UNE ESTIMATION
+													GRATUITE</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+
 					</div>
+
+
 				</div>
 			</section>
 
-			<div class="container position-relative z-index-1" style="margin-top: -388px;  ;background-size: cover;">
-				<div class="row align-items-end pb-4 mb-4 mb-lg-5"
-					style="  background-size: cover;">
-
-					<div class="col-lg-6 pb-lg-5">
-						<div class="row" style="background-color: white;">
-							<div class="row-6 row-xl-3 mb-5 mb-xl-0 appear-animation"
-								data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
-								<div
-									class="d-flex align-items-center justify-content-center flex-column flex-xl-row text-center">
-									<svg fill="none" height="30" stroke="#212121" stroke-linecap="round"
-										stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="30"
-										xmlns="http://www.w3.org/2000/svg">
-										<path d="M22 11.07V12a10 10 0 1 1-5.93-9.14" />
-										<polyline points="23 3 12 14 9 11" />
-									</svg>
-									<h3 class="text-transform-none  mb-0 text-4 ps-1 ms-xl-2 mt-3 mt-xl-0">
-										<span style="color: #21fc66;">Simulez </span> : En quelques clics, réalisez une
-										estimation gratuite de vos aides et bénéficiez
-										de notre accompagnement pour simplifier vos démarches.
-								</div>
-							</div>
-
-							<div class="row-6 row-xl-3 mb-5 mb-xl-0 appear-animation"
-								data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
-								<div
-									class="d-flex align-items-center justify-content-center flex-column flex-xl-row text-center">
-									<svg fill="none" height="30" stroke="#212121" stroke-linecap="round"
-										stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="30"
-										xmlns="http://www.w3.org/2000/svg">
-										<path d="M22 11.07V12a10 10 0 1 1-5.93-9.14" />
-										<polyline points="23 3 12 14 9 11" />
-									</svg>
-									<h3 class="text-transform-none mb-0 text-4 ps-1 ms-xl-2 mt-3 mt-xl-0">
-
-										<span style="color: #ef58c2 ;">
-											Rénovez </span> : Bénéficiez de notre réseau d’artisans locaux qualifiés
-										pour
-										réaliser des
-										travaux de qualité.
-
-								</div>
-							</div>
-
-							<div class="row-6 row-xl-3 mb-5 mb-xl-0 appear-animation"
-								data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
-								<div
-									class="d-flex align-items-center justify-content-center flex-column flex-xl-row text-center">
-									<svg fill="none" height="30" stroke="#212121" stroke-linecap="round"
-										stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="30"
-										xmlns="http://www.w3.org/2000/svg">
-										<path d="M22 11.07V12a10 10 0 1 1-5.93-9.14" />
-										<polyline points="23 3 12 14 9 11" />
-									</svg>
-									<h3 class="text-transform-none mb-0 text-4 ps-1 ms-xl-2 mt-3 mt-xl-0">
-
-										<span style="color: #037ef3;"> Économisez </span> : Obtenez les meilleures
-										primes,
-										faîtes des économies d’énergie et augmenter
-										la valeur de votre bien.</h3>
-
-
-								</div>
-							</div>
-							<div class="row align-items-center"
-								style="width: 100%; display: grid; place-items: center;">
-								<div class="col-auto ">
-									<button type="submit" class="btn btn-primary mb-2"
-										style="background: linear-gradient(to right top, blue, red); color:rgb(255, 255, 255) ; border: none; box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 5%), 0 1.5rem 2.2rem rgb(0 0 0 / 10%) !important;">Je
-										JE FAIS LE TEST</button>
-								</div>
-							</div>
-
-
-						</div>
-					</div>
-					<div class="col-lg-6 pe-lg-4 mb-5 mb-lg-0">
-						<div class="card border-0 custom-border-radius-1 box-shadow-1 appear-animation"
-							data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
-							<div class="card-body p-5">
-								<h2 class="text-color-secondary font-weight-bold text-7 line-height-1 mb-1">DEMANDE DE
-									RAPPEL</h2>
-								<p class="custom-font-secondary text-4 pb-1 mb-4">Besoin d’une assistance personnalisée
-									? Prenez contact</p>
-								<p class="custom-font-secondary text-4 pb-1 mb-4">avec notre équipe qui vous rappellera
-									sous 24h.
-								</p>
-
-
-
-
-
-
-								<form class="contact-form custom-form-style-1"
-									action="https://sheetdb.io/api/v1/smvo8zxy3a2pc" method="POST">
-									<div class="contact-form-success alert alert-success d-none mt-4">
-										<strong> Succès!</strong> Votre demande nous a été envoyée.
-									</div>
-
-									<div class="contact-form-error alert alert-success d-none mt-4">
-										<strong> Succès!</strong> Votre demande nous a été envoyée.
-										<span class="mail-error-message text-1 d-block"></span>
-									</div>
-
-									<div class="row">
-										<div class="form-group col pb-1 mb-3">
-
-
-											<input type="text" value=""
-												data-msg-required="S'il vous plaît entrez votre nom." maxlength="100"
-												class="form-control" name="data[name]" placeholder="Nom" required>
-
-
-										</div>
-									</div>
-									<div class="row">
-										<div class="form-group col pb-1 mb-3">
-
-
-											<input type="email" value=""
-												data-msg-required="S'il vous plaît entrez votre adresse email."
-												maxlength="100" class="form-control" name="data[email]"
-												placeholder="Adresse Email" required>
-
-
-										</div>
-									</div>
-									<div class="row">
-										<div class="form-group col pb-1 mb-3">
-
-											<input type="tel" value=""
-												data-msg-required="S'il vous plaît entrez votre Numéro de téléphone."
-												maxlength="100" class="form-control" name="data[phone]"
-												placeholder="Numéro de téléphone" required>
-
-										</div>
-									</div>
-									<div class="row">
-										<div class="form-group col pb-1 mb-3">
-											<div class="custom-select-1">
-												<select data-msg-required="Veuillez sélectionner un projet."
-													class="form-control" name="data[project]" required>
-													<option value="Votre/Vos projet(s)" selected>Votre/Vos projet(s)
-													</option>
-													<option value="Isolation">Isolation </option>
-													<option value="Pompe à chaleur Air Eau">Pompe à chaleur Air Eau
-													</option>
-													<option value="Pompe à chaleur Air Air">Pompe à chaleur Air Air
-													</option>
-													<option value="Autre">Autre</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									<div class="d-flex row">
-
-										<div class=" form-group col pb-1 mb-3">
-											<input type="postal" value=""
-												data-msg-required="S'il vous plaît entrez votre Code postal."
-												maxlength="100" class="form-control" name="data[code]"
-												placeholder="Code postal" required>
-										</div>
-
-
-										<div class="form-group col pb-1 mb-3">
-											<input type="text" value=""
-												data-msg-required="S'il vous plaît entrez votre Ville ." maxlength="100"
-												class="form-control" name="data[city]" placeholder="Ville" required>
-
-										</div>
-
-
-									</div>
-									<div class="row">
-										<div class="form-group col mx-auto" style="display: grid; place-items: center;">
-											<button type="submit"
-												class="btn btn-primary font-weight-bold text-3 px-5 py-3 "
-												style="background: linear-gradient(to right top, blue, red) ; border:none"
-												data-loading-text="Loading...">JE DEMANDE UNE ESTIMATION
-												GRATUITE</button>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-
-
+			<div class="container position-relative z-index-1"
+				style="margin-top: 0px;  ;background-size: cover; padding-right: 0px !important; margin-right: 0px !important;">
+				<div class="row align-items-end pb-4 mb-4 mb-lg-5" style="  background-size: cover;">
 
 				</div>
 
@@ -453,7 +549,7 @@
 
 
 			<section id="simulation" class="section section-default"
-				style="background: url(img/prime/back.jpg); border: none;">
+				style="background: url(img/prime/topback.png); border: none; margin-top: 0px !important;">
 				<form method="POST" target="hiddenFrame" action="https://sheetdb.io/api/v1/p0te9vmrbwln5">
 
 					<div class="container"
@@ -483,10 +579,8 @@
 							<div class="col">
 
 
-								<input type="checkbox" id="checkbox2" value="pompe_a_chaleur_air_eau" name="data[project2]"
-
-
-									style="width: 0px; height: 0px;">
+								<input type="checkbox" id="checkbox2" value="pompe_a_chaleur_air_eau"
+									name="data[project2]" style="width: 0px; height: 0px;">
 
 								<img src="./img/prime/o-2.png" style="height: 130px;"
 									class="rounded mx-auto c-img d-block" alt="...">
@@ -498,10 +592,8 @@
 							<div class="col">
 
 
-								<input type="checkbox" id="checkbox3" value="pompe_a_chaleur_air_air" name="data[project3]"
-
-
-									style="width: 0px; height: 0px;">
+								<input type="checkbox" id="checkbox3" value="pompe_a_chaleur_air_air"
+									name="data[project3]" style="width: 0px; height: 0px;">
 
 								<img src="./img/prime/o-3.png" style="height: 130px;"
 									class="rounded mx-auto c-img d-block" alt="...">
@@ -523,10 +615,9 @@
 								<div class="col"
 									style="background:  #F3F6E6; padding-left: 5px; padding-top: 4px ; border-radius: 10px; ">
 									<div class="form-check form-check-inline" style="color: rgb(159, 159, 159);">
-										<label class="form-check-label"> 
+										<label class="form-check-label">
 											<input class="form-check-input" type="radio" value="oui" name="data[choise]"
-												
-												id="tabContent13Radio1" > Oui
+												id="tabContent13Radio1"> Oui
 										</label>
 									</div>
 									<div class="form-check form-check-inline" style="color: rgb(159, 159, 159);">
@@ -538,8 +629,7 @@
 									<div class="form-check form-check-inline" style="color: rgb(159, 159, 159);">
 										<label class="form-check-label">
 											<input class="form-check-input" type="radio" name="data[choise]"
-												value="peut_etre_plus_tard"
-												id="tabContent13Radio3" > Peut être plus tard
+												value="peut_etre_plus_tard" id="tabContent13Radio3"> Peut être plus tard
 										</label>
 									</div>
 								</div>
@@ -565,10 +655,10 @@
 			<section id="qualifications" class="section border-0 py-0 m-0"
 				style="background: none; background-size: cover; overflow: hidden;">
 
-<img src="img/prime/back.jpg" style="opacity: 0.4; position: absolute; " />
+				<img src="img/prime/topback.png" style="opacity: 0.4; position: absolute; " />
 
 				<div class="container">
-					
+
 					<div class="row align-items-end pt-3 mb-5 mb-lg-4">
 						<div class="col-lg-7 col-xl-8 mb-4 mb-lg-0" style="width: 100%;">
 							<h3 class="font-weight-bold text-transform-none text-8 mb-3 pb-1 appear-animation"
@@ -667,7 +757,7 @@
 
 			<section id="aides&primes" class="section border-0 py-4 m-0"
 				style="display: grid; place-items: center ; padding-top: 50px; padding-bottom: 50px;">
-				<img src="img/prime/ba.png" style="position: absolute; display: none; " />
+				<img src="img/prime/topback.png" style="position: absolute; display: none; " />
 
 				<div class="card mb-4" style="background: none !important; border: none;">
 					<div class="card-body" style="background: none !important;">
@@ -772,9 +862,7 @@
 
 
 
-			<section class="section section-with-shape-divider border-0 bg-transparent m-0">
-				<img src="./img/prime/back.jpg" style="position: absolute;  opacity: 0.4;" />
-
+			<section class="section section-with-shape-divider border-0 bg-transparent m-0" style="padding: 0px;">
 
 
 				<div class="container" style="width: 100% !important; ">
@@ -800,13 +888,15 @@
 													data-appear-animation="fadeInUpShorter"
 													data-appear-animation-delay="300">
 													<div class="box-content text-center">
-														<div class="custom-featured-icon-wrapper bg-secondary mb-4"
-															style="background: linear-gradient(to right top, blue, red) !important;">
-															<i class="fas fa-3x fa-hand-holding-usd"
-																style="color: white;"></i>
-														</div>
-														<h3
-															class="text-transform-none font-weight-bold custom-font-size-1 mb-3">
+
+														<i class="fas fa-3x fa-hand-holding-usd" style="background : linear-gradient(to right top, blue, red) ;
+																-webkit-background-clip: text;
+																text-align: center;
+													
+																-webkit-text-fill-color: transparent;"></i>
+
+														<h3 class="text-transform-none font-weight-bold mb-3"
+															style="font-size: 30px; margin-top: 10px;">
 															+20M $
 														</h3>
 														<p class="px-3 mb-0">Prime obtenue</p>
@@ -823,12 +913,15 @@
 													data-appear-animation="fadeInUpShorter"
 													data-appear-animation-delay="300">
 													<div class="box-content text-center">
-														<div class="custom-featured-icon-wrapper bg-secondary mb-4"
-															style="background: linear-gradient(to right top, blue, red) !important;">
-															<i class="fas fa-3x fa-home" style="color: white;"></i>
-														</div>
-														<h3
-															class="text-transform-none font-weight-bold custom-font-size-1 mb-3">
+
+														<i class="fas fa-3x fa-home" style="background : linear-gradient(to right top, blue, red) ;
+																-webkit-background-clip: text;
+																text-align: center;
+													
+																-webkit-text-fill-color: transparent;"></i>
+
+														<h3 class="text-transform-none font-weight-bold  mb-3"
+															style="font-size: 30px; margin-top: 10px;">
 															+1000
 														</h3>
 														<p class="px-3 mb-0">Maisons rénovées</p>
@@ -844,12 +937,17 @@
 													data-appear-animation="fadeInUpShorter"
 													data-appear-animation-delay="300">
 													<div class="box-content text-center">
-														<div class="custom-featured-icon-wrapper bg-secondary mb-4"
-															style="background: linear-gradient(to right top, blue, red) !important;">
-															<i class="fas fa-3x fa-briefcase" style="color: white;"></i>
-														</div>
-														<h3
-															class="text-transform-none font-weight-bold custom-font-size-1 mb-3">
+
+														<i class="fas fa-3x " style="color: white;"></i>
+
+														<i class="fas fa-3x fa-briefcase" style="background : linear-gradient(to right top, blue, red) ;
+																-webkit-background-clip: text;
+																text-align: center;
+													
+																-webkit-text-fill-color: transparent;"></i>
+
+														<h3 class="text-transform-none font-weight-bold  mb-3"
+															style="font-size: 30px; margin-top: 10px;">
 															+120
 														</h3>
 														<p class="px-3 mb-0">Artisans RGE</p>
@@ -865,28 +963,23 @@
 													data-appear-animation="fadeInUpShorter"
 													data-appear-animation-delay="300">
 													<div class="box-content text-center">
-														<div class="custom-featured-icon-wrapper bg-secondary mb-4"
-															style="background: linear-gradient(to right top, blue, red) !important;">
-															<i class="fas fa-3x fa-handshake" style="color: white;"></i>
-														</div>
-														<h3
-															class="text-transform-none font-weight-bold custom-font-size-1 mb-3">
+
+
+														<i class="fas fa-3x fa-handshake" style="background : linear-gradient(to right top, blue, red) ;
+																-webkit-background-clip: text;
+																text-align: center;
+													
+																-webkit-text-fill-color: transparent;"></i>
+
+														<h3 class="text-transform-none font-weight-bold mb-3"
+															style="font-size: 30px; margin-top: 10px;">
 															+10
 														</h3>
 														<p class="px-3 mb-0">Marques partenaires</p>
 													</div>
 												</div>
 											</div>
-
 										</div>
-
-
-
-
-
-
-
-
 									</div>
 								</div>
 							</div>
@@ -897,169 +990,24 @@
 			</section>
 
 
-			<section class="section section-with-shape-divider border-0 bg-transparent m-0">
+			<section class="section section-with-shape-divider border-0  " style="background: white;">
 
-				<div class="container" style="width: 100% !important; ">
-
-					<div class="featured-boxes featured-boxes-style-4 custom-featured-boxes-style-2"
-						style="width: 100% !important;">
-
-						<div class="row appear-animation align-items-center " data-appear-animation="fadeInUpShorter"
-							data-appear-animation-delay="600">
-							<div class="col align-items-center">
-								<div class="row">
-									<h1 class="text-transform-none font-weight-bold custom-font-size-1 mb-3" style="background: linear-gradient(to right top, blue, red);
-											-webkit-background-clip: text;
-											width: 100%;
-											text-align: center;
-											font-weight: bolder;
-											font-size: 35px !important;
-											text-transform: uppercase;
-											-webkit-text-fill-color: transparent; ">
-										LES CHIFFRES FOUS DE LA POMPE à CHALEUR
-
-									</h1>
-								</div>
-								<div class="row" style="width: 100% !important;">
-
-									<div class="owl-carousel nav-outside nav-arrows-1 appear-animation align-items-center"
-										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
-										data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 2}, '768': {'items': 4}, '979': {'items': 5}, '1199': {'items': 5}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
-
-
-										<div>
-
-											<div class="row">
-												<div class="featured-box featured-box-effect-5 appear-animation"
-													data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="300">
-													<div class="box-content text-center">
-														<p class="px-3 mb-0">Des aides permettant une prise en charge
-															jusqu’à</p>
-														<h3 class="text-transform-none font-weight-bold custom-font-size-1 mb-3"
-															style="background: linear-gradient(to right top, blue, red);
-											-webkit-background-clip: text;
-											font-weight: bolder;
-											-webkit-text-fill-color: transparent; ">
-															90%
-														</h3>
-
-													</div>
-												</div>
-											</div>
-
-										</div>
-
-										<div>
-
-											<div class="row">
-												<div class="featured-box featured-box-effect-5 appear-animation"
-													data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="300">
-													<div class="box-content text-center">
-														<p class="px-3 mb-0">Réduction de votre facture énergétique
-															jusqu’à </p>
-														<h3 class="text-transform-none font-weight-bold custom-font-size-1 mb-3"
-															style="background: linear-gradient(to right top, blue, red);
-											-webkit-background-clip: text;
-											font-weight: bolder;
-											-webkit-text-fill-color: transparent; ">
-															75%
-														</h3>
-
-													</div>
-												</div>
-											</div>
-
-										</div>
-										<div>
-
-											<div class="row">
-												<div class="featured-box featured-box-effect-5 appear-animation"
-													data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="300">
-													<div class="box-content text-center">
-														<p class="px-3 mb-0">Augmentation de la valeur de votre bien de
-														</p>
-														<h3 class="text-transform-none font-weight-bold custom-font-size-1 mb-3"
-															style="background: linear-gradient(to right top, blue, red);
-											-webkit-background-clip: text;
-											font-weight: bolder;
-											-webkit-text-fill-color: transparent; ">
-															5%
-														</h3>
-
-													</div>
-												</div>
-											</div>
-
-										</div>
-										<div>
-
-											<div class="row">
-												<div class="featured-box featured-box-effect-5 appear-animation"
-													data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="300">
-													<div class="box-content text-center">
-														<p class="px-3 mb-0">Un financement de vos travaux avec un taux
-															à
-														</p>
-														<h3 class="text-transform-none font-weight-bold custom-font-size-1 mb-3"
-															style="background: linear-gradient(to right top, blue, red);
-											-webkit-background-clip: text;
-											font-weight: bolder;
-											-webkit-text-fill-color: transparent; ">
-															0
-														</h3>
-
-													</div>
-												</div>
-											</div>
-
-										</div>
-
-										<div>
-
-											<div class="row">
-												<div class="featured-box featured-box-effect-5 appear-animation"
-													data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="300">
-													<div class="box-content text-center">
-														<p class="px-3 mb-0">La garantie d’obtenir les meilleures aides
-															et primes à
-
-														</p>
-														<h3 class="text-transform-none font-weight-bold custom-font-size-1 mb-3"
-															style="background: linear-gradient(to right top, blue, red);
-											-webkit-background-clip: text;
-											font-weight: bolder;
-											-webkit-text-fill-color: transparent; ">
-															100%
-														</h3>
-
-													</div>
-												</div>
-											</div>
-
-										</div>
-
-
-
-
-
-
-
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<img src="./img/prime/panneau1.JPG" width="100%" />
 
 			</section>
 
+			<style>
+				.rtys {
+					font-size: 25px;
+				}
 
+				@media (max-width: 800px) {
+					.rtys {
+						font-size: 10px !important;
+					}
+
+				}
+			</style>
 
 			<section class="section parallax border-0 p-0 m-0" style="background: white;" data-plugin-parallax="">
 				<div class="d-flex justify-content-center">
@@ -1068,17 +1016,31 @@
 						<div class="container  py-5 " style="width: 100%;margin-right: 0px !important;">
 							<div class="row align-items-center"
 								style="text-align: center; font-size: 18px; font-weight: bolder;">
-								<h3 class="text-color-light  text-3" style="color: rgb(83, 83, 83) !important;	background : linear-gradient(to right top, blue, red) ;
+								<h3 class="text-color-light rtys" style="color: rgb(83, 83, 83) !important;	background : linear-gradient(to right top, blue, red) ;
 									-webkit-background-clip: text;
+									font-weight: bolder;
+									letter-spacing: 1.2px;
+									line-height: 200%;
 									-webkit-text-fill-color: transparent;">Tout comme Sarah, faîtes appel à
 									Labonneprime pour votre projet de rénovation énergétique.
 								</h3>
 							</div>
 							<div class="row align-items-center">
 								<div class="col-lg-6">
-									<div class="ratio ratio-16x9">
-										<iframe frameborder="0" allowfullscreen=""
-											src="//www.youtube.com/embed/Ytfd0ijV-mg?showinfo=0&amp;wmode=opaque"></iframe>
+									<div class="position-relative">
+										<div class="ratio ratio-4x3">
+											<video id="presentation2" class="float-start" width="100%" height="100%"
+												muted="" loop="" preload="metadata" poster="./img/prime/video.jpg">
+												<source src="video/presentation.webm" type="video/webm">
+												<source src="./img/prime/video.mp4" type="video/mp4">
+											</video>
+											<a href="#"
+												class="position-absolute top-50pct left-50pct transform3dxy-n50 bg-light rounded-circle d-flex align-items-center justify-content-center text-decoration-none bg-color-hover-primary text-color-hover-light play-button-lg pulseAnim pulseAnimAnimated"
+												data-trigger-play-video="#presentation2"
+												data-trigger-play-video-remove="yes">
+												<i class="fas fa-play text-5"></i>
+											</a>
+										</div>
 									</div>
 								</div>
 
@@ -1086,7 +1048,8 @@
 
 
 
-									<h2 class=" text-transform-none text-5 mb-0" style="color: black;"><span><img
+									<h2 class=" text-transform-none text-5 mb-0"
+										style="color: black; font-weight: bolder;"><span><img
 												src=" ./img/prime/icon-1.svg" alt=""
 												style="padding-right: 15px;"></span> FAITES DES ÉCONOMIES </h2>
 									<p class="font-weight-light text-3-5 pe-lg-4 pb-0 mb-0"
@@ -1094,7 +1057,8 @@
 										pensées pour améliorer votre confort au quotidien et vous faire économiser tout
 										au long de l'année. </p>
 
-									<h2 class=" text-transform-none text-5 mb-0" style="color: black;"><span><img
+									<h2 class=" text-transform-none text-5 mb-0"
+										style="color: black; font-weight: bolder;"><span><img
 												src=" ./img/prime/icon-2.svg" alt=""
 												style="padding-right: 15px;"></span>DES ÉCONOMIES DURABLES
 									</h2>
@@ -1102,7 +1066,8 @@
 										style="color: rgb(83, 83, 83) !important; ">Une facture de chauffage en baisse
 									</p>
 
-									<h2 class="text-transform-none text-5 mb-0" style="color: black;"><span><img
+									<h2 class="text-transform-none text-5 mb-0"
+										style="color: black; font-weight: bolder;"><span><img
 												src=" ./img/prime/icon-3.svg" alt=""
 												style="padding-right: 15px;"></span>UN LOGEMENT VALORISÉ
 									</h2>
@@ -1111,7 +1076,8 @@
 										immobilier !
 									</p>
 
-									<h2 class=" text-transform-none text-5 mb-0" style="color: black;"><span><img
+									<h2 class=" text-transform-none text-5 mb-0"
+										style="color: black; font-weight: bolder;"><span><img
 												src=" ./img/prime/icon-4.svg" alt=""
 												style="padding-right: 15px;"></span>PLUS DE CONFORT
 									</h2>
@@ -1211,216 +1177,226 @@
 			</section>
 			</section>
 
-			<section id="nosmaques" style="background : url(./img/prime/p2.jpg); background-size: cover;">
+			<section id="nosmaques" style="background-size: cover;">
 
 
-<section style="background-color:rgba(59, 149, 244, 0.187) ;">
 
-				<section class="section border-0 pt-4 m-0 " style="background: none; border-bottom: 5px solid gray;">
-					<div class="container" style="background: none; ">
-						<div class="row justify-content-center pb-2 mb-3">
-							<div class="col-md-9 col-lg-8 text-center">
-								<h2 class="text-color-secondary font-weight-bold line-height-6 mb-3 appear-animation"
-									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="
+
+
+				<section
+					style="background: url(./img/prime/back.jpg); background-position: center; background-size: contain; background-attachment: fixed;">
+					<section class="section border-0 pt-4 m-0 "
+						style="background: none; border-bottom: 5px solid gray; margin-bottom: 0px; padding-bottom: 0px;">
+						<div class="container" style="background: none; ">
+							<div class="row justify-content-center pb-2 mb-3">
+								<div class="col-md-9 col-lg-8 text-center">
+									<h2 class="text-color-secondary font-weight-bold line-height-6 mb-3 appear-animation"
+										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="
 								
-									background: linear-gradient(to right top, blue, red);
+									background: white;
 									-webkit-background-clip: text;
 									-webkit-text-fill-color: transparent;
 								  ">Les dispositifs d’aides en 2021
-								</h2>
-							</div>
-						</div>
-
-
-
-
-						<div class="row appear-animation align-items-center " data-appear-animation="fadeInUpShorter"
-							data-appear-animation-delay="600">
-							<div class="col align-items-center">
-								<div class="owl-carousel nav-outside nav-arrows-1 appear-animation align-items-center"
-									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
-									data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 3}, '1199': {'items': 3}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
-
-
-									<div>
-										<div class="card custom-card-style-1">
-											<div class="card-body text-center py-3 px-0 align-items-center">
-
-												<ul class="list list-unstyled pb-1 mb-4 ">
-													<img style="width: 50%; height: 0%; margin: 0 auto;"
-														src="img/prime/a-1.jpg">
-												</ul>
-
-											</div>
-										</div>
-									</div>
-
-									<div>
-										<div class="card custom-card-style-1">
-											<div class="card-body text-center py-3 px-0 align-items-center">
-
-												<ul class="list list-unstyled pb-1 mb-4 ">
-													<img style="width: 50%; height: 0%; margin: 0 auto;"
-														src="img/prime/a-2.jpg">
-												</ul>
-
-											</div>
-										</div>
-									</div>
-
-									<div>
-										<div class="card custom-card-style-1">
-											<div class="card-body text-center py-3 px-0 align-items-center">
-
-												<ul class="list list-unstyled pb-1 mb-4 ">
-													<img style="width: 50%; height: 0%; margin: 0 auto;"
-														src="img/prime/a-3.png">
-												</ul>
-
-											</div>
-										</div>
-									</div>
-
-
-
-
-
-
-
+									</h2>
 								</div>
 							</div>
-						</div>
 
-						<section class="section border-0 py-0 m-0"
-							style="background : none ;  display: grid; place-items: center ; padding-top: 0px; padding-bottom: 0px;">
 
-							<div class="card mb-4"
-								style="background: none !important; border: none; border-radius: 0px; ">
-								<div class="card-body" style="background: none !important;">
-									<div class="row">
 
-										<div class="col">
-											<form>
 
-												<div class="row">
-													<div class="col-auto">
-														<label class="sr-only" for="inlineFormInputGroup">code
-															postal</label>
-														<div class="input-group mb-2"
-															style="box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 5%), 0 1.5rem 2.2rem rgb(0 0 0 / 10%) !important;">
-															<div class="input-group-text"
-																style="background: linear-gradient(to right top, blue, red) !important; border: none !important;">
-																<i class="icon-envelope icons text-3 top-3 left-1 me-2 font-weight-bold"
-																	style="color: white ;"></i>
+							<div class="row appear-animation align-items-center " style="overflow: visible;"
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="col align-items-center" style="overflow: visible;">
+									<div class="owl-carousel nav-outside nav-arrows-1 appear-animation align-items-center"
+										style="overflow: visible;" data-appear-animation="fadeInUpShorter"
+										data-appear-animation-delay="750"
+										data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 3}, '1199': {'items': 3}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
+
+
+										<div>
+											<div class="card custom-card-style-1"
+												style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+												<div class="card-body text-center py-3 px-0 align-items-center">
+
+													<ul class="list list-unstyled pb-1 mb-4 ">
+														<img style="width: 50%; height: 0%; margin: 0 auto;"
+															src="img/prime/a-1.jpg">
+													</ul>
+
+												</div>
+											</div>
+										</div>
+
+										<div>
+											<div class="card custom-card-style-1"
+												style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+												<div class="card-body text-center py-3 px-0 align-items-center">
+
+													<ul class="list list-unstyled pb-1 mb-4 ">
+														<img style="width: 50%; height: 0%; margin: 0 auto;"
+															src="img/prime/a-2.jpg">
+													</ul>
+
+												</div>
+											</div>
+										</div>
+
+										<div>
+											<div class="card custom-card-style-1"
+												style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; overflow: visible;">
+												<div class="card-body text-center py-3 px-0 align-items-center"
+													style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+
+													<ul class="list list-unstyled pb-1 mb-4 ">
+														<img style="width: 50%; height: 0%; margin: 0 auto;"
+															src="img/prime/a-3.png">
+													</ul>
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
+									</div>
+								</div>
+							</div>
+
+							<section class="section border-0 py-0 m-0"
+								style="background : none ;  display: grid; place-items: center ; padding-top: 0px; padding-bottom: 0px;">
+
+								<div class="card mb-4"
+									style="background: none !important; border: none; border-radius: 0px; ">
+									<div class="card-body" style="background: none !important;">
+										<div class="row">
+
+											<div class="col">
+												<form>
+
+													<div class="row">
+														<div class="col-auto">
+															<label class="sr-only" for="inlineFormInputGroup">code
+																postal</label>
+															<div class="input-group mb-2"
+																style="box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 5%), 0 1.5rem 2.2rem rgb(0 0 0 / 10%) !important;">
+																<div class="input-group-text"
+																	style="background: linear-gradient(to right top, blue, red) !important; border: none !important;">
+																	<i class="icon-envelope icons text-3 top-3 left-1 me-2 font-weight-bold"
+																		style="color: white ;"></i>
+																</div>
+																<input type="postal"
+																	style="border: none; background-color: rgb(255, 255, 255);"
+																	class="form-control" id="inlineFormInputGroup"
+																	placeholder="Code postal">
 															</div>
-															<input type="postal"
-																style="border: none; background-color: rgb(255, 255, 255);"
-																class="form-control" id="inlineFormInputGroup"
-																placeholder="Code postal">
+														</div>
+
+														<div class="col-auto align-items-center">
+															<button type="submit" class="btn btn-primary mb-2"
+																style="background: linear-gradient(to right top, blue, red) ;margin: 0 auto !important; color:rgb(255, 255, 255) ; border: none; box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 5%), 0 1.5rem 2.2rem rgb(0 0 0 / 10%) !important;">JE
+																TEST MON ÉLIGIBILITÉ </button>
 														</div>
 													</div>
 
-													<div class="col-auto align-items-center">
-														<button type="submit" class="btn btn-primary mb-2"
-															style="background: linear-gradient(to right top, blue, red) ;margin: 0 auto !important; color:rgb(255, 255, 255) ; border: none; box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 5%), 0 1.5rem 2.2rem rgb(0 0 0 / 10%) !important;">JE
-															TEST MON ÉLIGIBILITÉ </button>
-													</div>
-												</div>
-
+											</div>
+											</form>
 										</div>
-										</form>
 									</div>
 								</div>
-							</div>
-					</div>
+						</div>
 
-				</section>
+					</section>
 
-				<section class="section border-0 pt-4 m-0 " style="background: none ;">
-					<div class="container">
-						<div class="row justify-content-center pb-2 mb-3">
-							<div class="col-md-9 col-lg-8 text-center">
-								<h2 class="text-color-secondary font-weight-bold line-height-6 mb-3 appear-animation"
-									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="
+					<section class="section border-0 m-0 "
+						style="background: none ; margin-top: 0px; padding-top: 0px;">
+						<div class="container">
+							<div class="row justify-content-center pb-2 mb-3">
+								<div class="col-md-9 col-lg-8 text-center">
+									<h2 class="text-color-secondary font-weight-bold line-height-6 mb-3 appear-animation"
+										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="
 								
-									background: linear-gradient(to right top, blue, red);
+									background: white;
 									-webkit-background-clip: text;
 									-webkit-text-fill-color: transparent;
 								  ">Nos marques partenaires
-								</h2>
-							</div>
-						</div>
-
-
-
-
-						<div class="row appear-animation align-items-center " data-appear-animation="fadeInUpShorter"
-							data-appear-animation-delay="600">
-							<div class="col align-items-center">
-								<div class="owl-carousel nav-outside nav-arrows-1 appear-animation align-items-center"
-									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
-									data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 3}, '1199': {'items': 3}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
-
-
-									<div>
-										<div class="card custom-card-style-1">
-											<div class="card-body text-center py-3 px-0">
-
-												<ul class="list list-unstyled pb-1 mb-4 ">
-													<img style="width: 50%; height: 0%; margin: 0 auto;"
-														src="img/prime/c-1.png">
-												</ul>
-
-											</div>
-										</div>
-									</div>
-
-									<div>
-										<div class="card custom-card-style-1">
-											<div class="card-body text-center py-3 px-0 align-items-center">
-
-												<ul class="list list-unstyled pb-1 mb-4 ">
-													<img style="width: 50%; height: 0%; margin: 0 auto;"
-														src="img/prime/c-2.png">
-												</ul>
-
-											</div>
-										</div>
-									</div>
-
-									<div>
-										<div class="card custom-card-style-1">
-											<div class="card-body text-center py-3 px-0 align-items-center">
-
-												<ul class="list list-unstyled pb-1 mb-4 ">
-													<img style="width: 50%; height: 0%; margin: 0 auto;"
-														src="img/prime/c-3.png">
-												</ul>
-
-											</div>
-										</div>
-									</div>
-
-
-
-
-
-
-
+									</h2>
 								</div>
 							</div>
+
+
+
+
+							<div class="row appear-animation align-items-center "
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="col align-items-center">
+									<div class="owl-carousel nav-outside nav-arrows-1 appear-animation align-items-center"
+										data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"
+										data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 3}, '1199': {'items': 3}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
+
+
+										<div>
+											<div class="card custom-card-style-1">
+												<div class="card-body text-center py-3 px-0">
+
+													<ul class="list list-unstyled pb-1 mb-4 ">
+														<img style="width: 50%; height: 0%; margin: 0 auto;"
+															src="img/prime/c-1.png">
+													</ul>
+
+												</div>
+											</div>
+										</div>
+
+										<div>
+											<div class="card custom-card-style-1">
+												<div class="card-body text-center py-3 px-0 align-items-center">
+
+													<ul class="list list-unstyled pb-1 mb-4 ">
+														<img style="width: 50%; height: 0%; margin: 0 auto;"
+															src="img/prime/c-2.png">
+													</ul>
+
+												</div>
+											</div>
+										</div>
+
+										<div>
+											<div class="card custom-card-style-1">
+												<div class="card-body text-center py-3 px-0 align-items-center">
+
+													<ul class="list list-unstyled pb-1 mb-4 ">
+														<img style="width: 50%; height: 0%; margin: 0 auto;"
+															src="img/prime/c-3.png">
+													</ul>
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+
 						</div>
+					</section>
 
 
-
-
-
-
-					</div>
 				</section>
-
-
-</section>
 
 
 
@@ -1433,7 +1409,6 @@
 
 			<section id="contact">
 				<div class="container pb-1">
-
 					<div class="row pt-4">
 						<div class="col">
 							<div class="overflow-hidden ">
@@ -1466,22 +1441,42 @@
 							<div class="row">
 								<div class="col">
 									<div class="featured-box featured-box-effect-4">
-										<div class="box-content">
-											<i
-												class="icon-featured icon-phone icons text-color-primary bg-color-grey"></i>
-											<h4 class="font-weight-bold">01.84.80.60.22</h4>
-											<p class="px-3">Appel gratuit 8h - 20h
+										<div class="box-content" style="display: grid; place-items: center;">
+
+											<div style="width: auto; display: grid; place-items: center;">
+
+												<div style="display: flex;">
+													<i class="icon-phone"
+														style="width: 50px; height: 50px; font-size: 30px; color: rgb(255, 55, 0);"></i>
+													<h4 class="font-weight-bold">01.84.80.60.22</h4>
+
+												</div>
+
+											</div>
+
+
+
+											<span class="px-3">Appel gratuit 8h - 20h
 												Du lundi au samedi
-											</p>
+											</span>
 										</div>
 									</div>
 								</div>
 								<div class="col">
 									<div class="featured-box featured-box-effect-4">
 										<div class="box-content">
-											<i
-												class="icon-featured icon-envelope icons text-color-light bg-color-primary"></i>
-											<h4 class="font-weight-bold">info@labonneprime.fr</h4>
+
+											<div style="width: auto; display: grid; place-items: center;">
+
+												<div style="display: flex;">
+													<i class="icon-envelope"
+														style="width: 50px; height: 50px; font-size: 30px; color: rgb(255, 55, 0);"></i>
+
+													<h4 class="font-weight-bold">info@labonneprime.fr</h4>
+
+												</div>
+											</div>
+
 											<p class="px-3">On vous répond rapidement</p>
 										</div>
 									</div>
